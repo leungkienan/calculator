@@ -1,0 +1,15 @@
+table {
+    margin: auto;
+    background-color: black;
+    font-size:40px; 
+  }
+  button {
+      min-width: 200px;
+      min-height: 100px;
+      font-size:40px; 
+  }
+  
+  #screen {
+      color: white;
+      font-size:70px;
+  }
