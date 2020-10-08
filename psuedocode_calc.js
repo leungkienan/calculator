@@ -27,7 +27,7 @@ function buttonPress() {
 // if a number is pressed, store the value to "val" and display that number on the screen as a string
 function inputValue(num) {
   calcArr.push(num);
-  console.log(calcArr)
+  console.log(calcArr);
   console.log("The number " + num + " button works ");
 }
 
@@ -36,12 +36,16 @@ function inputValue(num) {
 // display the value (0)
 function clearAC() {
   calcArr = [];
-  console.log(calcArr)
+  console.log(calcArr);
 }
 // if ce is pressed
 // clears the previous entry from the screen
 // set temp to '' and display the value 0
-function clearCE() {}
+function clearCE() {
+  // will clear the number you last entered
+  calcArr.pop();
+  console.log(calcArr);
+}
 
 function storeValue(symbol) {
   if (symbol == "*") {
@@ -57,12 +61,12 @@ function storeValue(symbol) {
 // divide symbol
 // same as above, but push '/' instead
 
-function calcValue(){
-    // turn the values in the array to nums
-    // do the correct operations depending on what buttons are pressed
-    // e.g. 6+7 should = 13
-    // challenge is for the calculator to do bedmas?
-        // e.g. takes the numbers before and after the "x" and multiply them 
+function calcValue() {
+  // turn the values in the array to nums
+  // do the correct operations depending on what buttons are pressed
+  // e.g. 6+7 should = 13
+  // challenge is for the calculator to do bedmas?
+  // e.g. takes the numbers before and after the "x" and multiply them
 }
 // equals symbol
 // push temp to entries array
